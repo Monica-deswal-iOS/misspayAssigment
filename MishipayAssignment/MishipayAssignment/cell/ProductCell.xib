@@ -12,7 +12,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="135" id="KGk-i7-Jjw" customClass="ProductCell" customModule="MishipayAssignment" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="523" height="135"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="523" height="135"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -25,7 +25,7 @@
                         <color key="textColor" red="0.0" green="0.25490196079999999" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dairy milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcU-6l-UXU">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Dairy milk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcU-6l-UXU">
                         <rect key="frame" x="140" y="40" width="343" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="uNK-B3-LNG"/>
@@ -44,10 +44,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₹ 145.70" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8R5-pg-0FI">
-                        <rect key="frame" x="140" y="90" width="343" height="20"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="ZGL-cF-ibt"/>
-                        </constraints>
+                        <rect key="frame" x="140" y="90" width="343" height="30"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.25490196079999999" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
