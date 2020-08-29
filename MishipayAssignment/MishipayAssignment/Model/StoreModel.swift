@@ -17,7 +17,7 @@ struct StoreModel {
     let productImage : String
     
     init(productName : String, brand : String, price : String , productDescription : String, productId : String,  productImage : String) {
-        self.productName = productName
+        self.productName = productName.capitalized
         self.brand = brand
         self.price = "₹" + price
         self.productDescription = productDescription

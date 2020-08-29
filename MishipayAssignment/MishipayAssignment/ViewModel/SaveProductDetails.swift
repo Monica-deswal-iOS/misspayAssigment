@@ -72,6 +72,11 @@ class SaveProductDetails {
                                                         "productImage":"10"]
     ]
     
+    static var saveDataArray: [StoreModel] {
+        get {
+            return SaveProductDetails.retrieveCrudArray()
+        }
+    }
     
     static func createData(){
         let appDelegate = AppDelegate()
@@ -98,7 +103,7 @@ class SaveProductDetails {
         }
     }
     
-    static func retrieveData()  -> [StoreModel]{
+    static func retrieveCrudArray()  -> [StoreModel]{
         let appDelegate = AppDelegate()
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: storeCRUD)
@@ -109,8 +114,8 @@ class SaveProductDetails {
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject] {
                 if let productName : String = data.value(forKey: "productName") as? String, let brand : String = data.value(forKey: "brand") as? String,  let price : String = data.value(forKey: "price") as? String ,  let productDescription : String  = data.value(forKey: "productDescription") as? String ,  let productId : String = data.value(forKey: "productId") as? String ,    let productImage : String  = data.value(forKey: "productImage") as? String {
-                   let storeObject = StoreModel(productName: productName, brand: brand, price: price, productDescription: productDescription, productId: productId, productImage: productImage)
-                     storeModelArray.append(storeObject)
+                    let storeObject = StoreModel(productName: productName, brand: brand, price: price, productDescription: productDescription, productId: productId, productImage: productImage)
+                    storeModelArray.append(storeObject)
                 }
             }
             return storeModelArray

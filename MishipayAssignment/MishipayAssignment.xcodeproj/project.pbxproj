@@ -11,6 +11,7 @@
 		6868E5B624FA19EE004C6413 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868E5B524FA19EE004C6413 /* StoreModel.swift */; };
 		6868E5BA24FA1D51004C6413 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868E5B824FA1D51004C6413 /* ProductCell.swift */; };
 		6868E5BB24FA1D51004C6413 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6868E5B924FA1D51004C6413 /* ProductCell.xib */; };
+		6868E5BD24FA3C7F004C6413 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6868E5BC24FA3C7F004C6413 /* QRScannerView.swift */; };
 		68958D3324FA08FC0000B3B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68958D3224FA08FC0000B3B1 /* AppDelegate.swift */; };
 		68958D3524FA08FC0000B3B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68958D3424FA08FC0000B3B1 /* SceneDelegate.swift */; };
 		68958D3A24FA08FC0000B3B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68958D3824FA08FC0000B3B1 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		6868E5B524FA19EE004C6413 /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
 		6868E5B824FA1D51004C6413 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		6868E5B924FA1D51004C6413 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		6868E5BC24FA3C7F004C6413 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		68958D2F24FA08FC0000B3B1 /* MishipayAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MishipayAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68958D3224FA08FC0000B3B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68958D3424FA08FC0000B3B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		68958D4C24FA0C380000B3B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6868E5BC24FA3C7F004C6413 /* QRScannerView.swift */,
 				68958D5524FA0CB80000B3B1 /* ScanBarcodeViewModel.swift */,
 				68958D5724FA0CD30000B3B1 /* ProductListViewModel.swift */,
 				68958D5924FA0CEE0000B3B1 /* ProductDetailViewModel.swift */,
@@ -225,6 +228,7 @@
 				68958D4E24FA0C5D0000B3B1 /* ScanBarcodeViewController.swift in Sources */,
 				68958D5424FA0C980000B3B1 /* CartViewController.swift in Sources */,
 				68958D5E24FA0F100000B3B1 /* SaveProductDetails.swift in Sources */,
+				6868E5BD24FA3C7F004C6413 /* QRScannerView.swift in Sources */,
 				68958D5A24FA0CEE0000B3B1 /* ProductDetailViewModel.swift in Sources */,
 				68958D3324FA08FC0000B3B1 /* AppDelegate.swift in Sources */,
 				68958D5824FA0CD30000B3B1 /* ProductListViewModel.swift in Sources */,
@@ -377,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3TL967M4A;
 				INFOPLIST_FILE = MishipayAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3TL967M4A;
 				INFOPLIST_FILE = MishipayAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

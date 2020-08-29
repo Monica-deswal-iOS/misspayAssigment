@@ -17,9 +17,7 @@ class ProductCell: UITableViewCell {
     @IBOutlet weak var price: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-       // imageView?.contentMode = .scaleAspectFit
-        self.imageView?.clipsToBounds = true
-        // Initialization code
+       
     }
     
     func popuatingTheCell(modelObject : StoreModel){
@@ -27,9 +25,7 @@ class ProductCell: UITableViewCell {
         self.brand.text = modelObject.brand
         self.productName.text = modelObject.productName
         self.price.text = modelObject.price
-        
-        self.imageView?.image =  UIImage(named: modelObject.productImage, in: Bundle(for: type(of: self)), compatibleWith: nil)
-        
+        self.productImage.image = UIImage(named: modelObject.productImage)
     }
     
 }
